@@ -17,8 +17,8 @@ func main() {
 	m:=make(map[interface{}]interface{})
 	m["Name"]="fengahan"
 	m["job"]="coder"
-	m["10"]="age"
-	m["a"]="age"
+	m[10]="age"
+
 	new_map:=array_change_key_case(m,CASE_LOWER)
 	fmt.Println(new_map)
 }
