@@ -12,7 +12,7 @@ https://secure.php.net/manual/zh/function.array-count-values.php
  */
 func main() {
 
-	arr:=[]interface{}{1, "hello", 1, "world", "hello"}
+	arr:=[]interface{}{1, "hello", 1,1, "world", "hello"}
 	m:=array_count_values(arr)
 	fmt.Println(m)
 }
