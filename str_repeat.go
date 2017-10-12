@@ -7,7 +7,7 @@ import (
 /**
 https://secure.php.net/manual/zh/function.str-repeat.php
 str_repeat — 重复一个字符串
- */
+ **/
 func main() {
 	str:="abc"
 	new_str:=str_repeat(str,6)//	strings.Repeat()可用此函数代替
