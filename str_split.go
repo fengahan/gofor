@@ -29,7 +29,6 @@ func str_split(str string,length int)[]string {
 		return []string{str}
 	}
  	for i:=0;i<c;i+=length{
- 		fmt.Println(string(strs[i:i+length]))
 		arr=append(arr,string(strs[i:i+length]))
 	}
 	return arr
