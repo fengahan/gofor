@@ -24,9 +24,9 @@ func main() {
 	m1["c"]=3;
 	m2["a"]=4;
 	m2["d"]=5;
-	fmt.Println(array_diff(m1,m2))
+	fmt.Println(array_diff_key(m1,m2))
 }
-func array_diff(m1,m2 map[string]int) map[string]int {
+func array_diff_key(m1,m2 map[string]int) map[string]int {
 
 	m3:=make(map[string]int)
 	for key,val:=range m1{
