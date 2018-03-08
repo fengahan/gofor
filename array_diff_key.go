@@ -13,26 +13,26 @@ import (
 *
 **/
 func main() {
-	var(
+	var (
 		m1 map[string]int
 		m2 map[string]int
 	)
-	m1=make(map[string]int)
-	m2=make(map[string]int)
-	m1["a"]=1;
-	m1["b"]=2;
-	m1["c"]=3;
-	m2["a"]=4;
-	m2["d"]=5;
-	fmt.Println(array_diff_key(m1,m2))
+	m1 = make(map[string]int)
+	m2 = make(map[string]int)
+	m1["a"] = 1
+	m1["b"] = 2
+	m1["c"] = 3
+	m2["a"] = 4
+	m2["d"] = 5
+	fmt.Println(array_diff_key(m1, m2))
 }
-func array_diff_key(m1,m2 map[string]int) map[string]int {
+func array_diff_key(m1, m2 map[string]int) map[string]int {
 
-	m3:=make(map[string]int)
-	for key,val:=range m1{
-			if _,ok:=m2[key];!ok{
-				m3[key]=val
-			}
+	m3 := make(map[string]int)
+	for key, val := range m1 {
+		if _, ok := m2[key]; !ok {
+			m3[key] = val
+		}
 	}
-	return m3;
+	return m3
 }
