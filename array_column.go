@@ -21,11 +21,7 @@ func main() {
 func array_column(m []map[string]interface{}, needle_key string) []interface{} {
 	var arr []interface{}
 	for _, v := range m {
-		for k, mv := range v {
-			if k == needle_key {
-				arr = append(arr, mv)
-			}
-		}
+		arr = append(arr,v[needle_key])
 	}
 	return arr
 }
