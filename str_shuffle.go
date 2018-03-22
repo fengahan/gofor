@@ -28,7 +28,7 @@ func main() {
 func generateRand(l int) []int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	m := make([]int, l)
-	for i := 0; i < l; i++ {
+	for i := 1; i < l; i++ {
 		j := r.Intn(i + 1)
 		m[i] = m[j]
 		m[j] = i
