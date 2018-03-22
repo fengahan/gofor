@@ -20,7 +20,6 @@ func main() {
 	}
 	fmt.Println(s)
 }
-
 /***
 生成0到len的不重复随机数
 可使用rand下的 perm函数
